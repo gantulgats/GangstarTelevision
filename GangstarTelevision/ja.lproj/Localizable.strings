@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  GangstarTelevision
+
+  Created by Gantulga Tsendsuren on 2014-10-28.
+  Copyright (c) 2014 Zorigt Tech. All rights reserved.
+*/
+"title" = "テレビ";
+"cancel" = "キャンセル";
+"choose" = "選ぶ";
+"chooseDate" = "日付を選択\n\n\n\n\n\n\n\n\n\n\n\n";
+"today" = "今日";

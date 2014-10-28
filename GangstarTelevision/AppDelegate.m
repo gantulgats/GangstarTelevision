@@ -26,6 +26,7 @@
     [Crashlytics startWithAPIKey:@"997f24978fc6a4c7535352991bad07eb263200cf"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ATLog(@"%@",[[UIScreen mainScreen] bounds]);
     if (isIPAD) {
         UISplitViewController *rootController = [[UISplitViewController alloc] initWithNibName:nil bundle:nil];
         rootController.presentsWithGesture = YES;
@@ -44,12 +45,7 @@
         UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
         self.window.rootViewController = navController;
     }
-    CGRect rect = CGRectFromString(@"{{0,0},{30,100}}");
-    ATLog(@"%@",rect);
-    {
-        UIImageView *imageView;
-        imageView.contentMode;
-    }
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

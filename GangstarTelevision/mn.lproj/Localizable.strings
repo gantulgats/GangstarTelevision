@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  GangstarTelevision
+
+  Created by Gantulga Tsendsuren on 2014-10-28.
+  Copyright (c) 2014 Zorigt Tech. All rights reserved.
+*/
+"title" = "Телевизүүд";
+"cancel" = "Болих";
+"choose" = "Сонгох";
+"chooseDate" = "Өдөр сонгох\n\n\n\n\n\n\n\n\n\n\n\n";
+"today" = "Өнөөдөр";
