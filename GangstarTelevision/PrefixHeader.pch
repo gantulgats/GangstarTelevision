@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  GangstarTelevision
+//
+//  Created by Gantulga Tsendsuren on 2014-10-28.
+//  Copyright (c) 2014 Zorigt Tech. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <ATLog.h>
+    #import "AppDelegate.h"
+#endif
+#   define ATLogError(fmt...) ATPrettyLog(@"\033[fg255,0,0;\033[bg255,255,255;%@\033[;",ATStringWithFormat(fmt))
+#   define ATLogWarning(fmt...) ATPrettyLog(@"\033[fg255,255,0;\033[bg220,0,0;%@\033[;",ATStringWithFormat(fmt))
+#   define ATLogURL(fmt...) ATPrettyLog(@"\033[fg0,0,255;\033[bg255,255,255;%@\033[;",ATStringWithFormat(fmt))
+#   define ATLogResponse(fmt...) ATPrettyLog(@"\033[fg0,0,255;\033[bg255,255,255;%@\033[;",ATStringWithFormat(fmt))
+#define APPDEL (AppDelegate *)[UIApplication sharedApplication].delegate
+#define isIPAD     UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
