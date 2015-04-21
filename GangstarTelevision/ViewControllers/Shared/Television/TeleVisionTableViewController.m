@@ -30,7 +30,6 @@
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -48,7 +47,9 @@
     if ([self.itemsArray count] == 0) {
     }
 }
-
+- (void)uploadImage {
+    
+}
 #pragma mark - AFNetWorking
 
 - (void) refreshData {
@@ -115,7 +116,7 @@
         }
     }
     TelevisionItem *item = [self.itemsArray objectAtIndex:indexPath.row];
-    [cell.imageView setImageWithURL:[NSURL URLWithString:item.imageURL] placeholderImage:[UIImage imageNamed:@"Default"] usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [cell.imageView setImageWithURL:[NSURL URLWithString:item.imageURL] placeholderImage:[UIImage imageNamed:@"icon-60"] usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     cell.detailTextLabel.text = item.schedule;
     cell.textLabel.text = item.teleVisionName;
     return cell;
